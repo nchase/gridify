@@ -1,0 +1,28 @@
+{
+  "name": "gridify",
+  "version": "0.0.0",
+  "description": "Simple code to add a root-element-relative vertical rhythm checker to a web page. Inspired by Sassline.",
+  "main": "gridify.js",
+  "keywords": [
+    "grid"
+  ],
+  "scripts": {
+    "build": "browserify gridify.js -t babelify --blacklist useStrict",
+    "build:bookmarklet": "echo \"javascript:\\c\" > gridify.bookmarklet.js && browserify gridify.js -t [ babelify --blacklist useStrict ] -t [ uglifyify --no-sourcemap ] | tr -d '\n' >> gridify.bookmarklet.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nchase/gridify/"
+  },
+  "author": "Noah Chase",
+  "license": "MIT",
+  "dependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.0",
+    "uglifyify": "^3.0.1"
+  }
+}
