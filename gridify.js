@@ -6,7 +6,7 @@
     return false;
   }
 
-  var gridifyStyle = "%rootEl% { background-image: linear-gradient(to bottom, #0FF 0, rgba(255, 255, 255, 0) 1px); background-repeat: repeat-y; background-size: 100% 1rem; background-color: transparent; } %rootEl% * { opacity: 0.825 !important;}";
+  var gridifyStyle = "%rootEl% { background-image: linear-gradient(to bottom, #0FF 0, rgba(255, 255, 255, 0) 1px) !important; background-repeat: repeat-y !important; background-size: 100% 1rem !important; background-color: transparent !important; } %rootEl% * { opacity: 0.825 !important;}";
 
   gridifyStyleSheet=document.createElement('style');
 
