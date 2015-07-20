@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "browserify gridify.js -t babelify --blacklist useStrict",
-    "build:bookmarklet": "echo \"javascript:\\c\" > gridify.bookmarklet.js && browserify gridify.js -t [ babelify --blacklist useStrict ] -t [ uglifyify --no-sourcemap ] | tr -d '\n' >> gridify.bookmarklet.js",
+    "build:bookmarklet": "echo \"javascript:\\c\" > gridify.bookmarklet.js && browserify gridify.js -t [ babelify --blacklist useStrict ] -t [ uglifyify --no-sourcemap ] | tr -d '\n' >> gridify.bookmarklet.js; echo \"void(0);\\c\" >> gridify.bookmarklet.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
