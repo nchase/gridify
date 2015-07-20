@@ -7,6 +7,7 @@ module.exports = function(rootSelector){
 
     ${rootSelector}:after {
       content: '';
+      display: block;
       position: absolute;
       top: 0;
       left: 0;
