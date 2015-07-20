@@ -2,6 +2,7 @@ module.exports = function(rootSelector){
   return `
     ${rootSelector} {
       position: relative;
+      height: auto;
     }
 
     ${rootSelector}:after {
