@@ -34,7 +34,7 @@ module.exports = function(rootSelector, horizontalInterval, verticalInterval){
       ;
       background-position: 0 0;
       background-repeat: repeat;
-      background-size: ${horizontalInterval} ${verticalInterval};
+      background-size: ${horizontalInterval || 100%} ${verticalInterval || 100%};
       background-color: transparent;
       opacity: 0.825;
       z-index: 1000;
