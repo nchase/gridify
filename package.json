@@ -1,6 +1,6 @@
 {
   "name": "gridify",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Simple code to add a root-element-relative vertical rhythm checker to a web page. Inspired by Sassline.",
   "main": "gridify.js",
   "keywords": [
